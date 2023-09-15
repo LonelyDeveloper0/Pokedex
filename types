@@ -1,0 +1,39 @@
+const typeImages = {
+    normal: './images/types/TeraGem_Normal.png',
+    poison: './images/types/TeraGem_Poison.png',
+    psychic: './images/types/TeraGem_Psychic.png',
+    rock: './images/types/TeraGem_Rock.png',
+    steel: './images/types/TeraGem_Steel.png',
+    water: './images/types/TeraGem_Water.png',
+    fire: './images/types/TeraGem_Fire.png',
+    flying: './images/types/TeraGem_Flying.png',
+    grass: './images/types/TeraGem_Grass.png',
+    ground: './images/types/TeraGem_Ground.png',
+    ice: './images/types/TeraGem_Ice.png',
+    bug: './images/types/TeraGem_Bug.png',
+    dark: './images/types/TeraGem_Dark.png',
+    dragon: './images/types/TeraGem_Dragon.png',
+    electric: './images/types/TeraGem_Electric.png',
+    fairy: './images/types/TeraGem_Fairy.png',
+    fighting: './images/types/TeraGem_Fighting.png'
+}
+
+const typeNames = {
+    normal: 'Normal',
+    poison: 'Poison',
+    psychic: 'Psychic',
+    rock: 'Rock',
+    steel: 'Steel',
+    water: 'Water',
+    fire: 'Fire',
+    flying: 'Flying',
+    grass: 'Grass',
+    ground: 'Ground',
+    ice: 'Ice',
+    bug: 'Bug',
+    dark: 'Dark',
+    dragon: 'Dragon',
+    electric: 'Electric',
+    fairy: 'Fairy',
+    fighting: 'Fighting'
+}
