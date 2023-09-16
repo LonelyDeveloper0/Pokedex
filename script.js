@@ -69,7 +69,7 @@ const toggleSex = async (pokemon) => {
     if (data) {
         if (isFemale) {
             pokemonImage.src = female;
-        } else{
+        } else {
             pokemonImage.src = male
         }
         isFemale != isFemale
@@ -100,23 +100,21 @@ const fetchPokemon = async (pokemon) => {
 
 const renderPokemon = async (pokemon) => {
     pokemonImage.src = ''
+    femaleMale.style.display = 'none'
     typePokemon.innerHTML = ''
     pokemonNumber.innerText = ''
     pokemonName.innerText = 'Loading...'
 
     const data = await fetchPokemon(pokemon)
-    const male = data.sprites.versions['generation-v']['black-white'].animated.front_default
-    const female = data.sprites.versions['generation-v']['black-white'].animated.front_female
 
     if (data) {
-        pokemonImage.src = male
+        pokemonImage.src = data.sprites.versions['generation-v']['black-white'].animated.front_default
         femaleMale.src = './images/male.png'
-        isFemale = true
         typePokemon.innerHTML = ''
         pokemonNumber.innerText = data.id
         pokemonID = data.id
         pokemonName.innerText = data.name
-        if (female) {
+        if (data.sprites.versions['generation-v']['black-white'].animated.front_female) {
             femaleMale.style.display = 'block'
         } else {
             femaleMale.style.display = 'none'
