@@ -6,7 +6,7 @@ const inputSearch = document.querySelector('.input__search')
 const femaleMale = document.querySelector('.male')
 
 let pokemonID = 1
-let isFemale = true
+let isMale = true
 
 const typeImages = {
     normal: './images/types/TeraGem_Normal.png',
@@ -67,18 +67,18 @@ const toggleSex = async (pokemon) => {
     const male = data.sprites.versions['generation-v']['black-white'].animated.front_default
 
     if (data) {
-        if (isFemale) {
+        if (isMale) {
             pokemonImage.src = female;
         } else {
             pokemonImage.src = male
         }
-        isFemale != isFemale
-        if (isFemale) {
+        isMale != isMale
+        if (isMale) {
             femaleMale.src = './images/female.png'
-            isFemale = false
+            isMale = false
         } else {
             femaleMale.src = './images/male.png'
-            isFemale = true
+            isMale = true
         }
         return data;
     } else {
